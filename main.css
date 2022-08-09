@@ -1,0 +1,555 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+/* -- topbar -- */
+.topbar{
+    background-color: rgba(255, 255, 255, 0.89);
+    color: white;
+    display: flex;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    justify-content: space-around ;
+    align-items: center;
+    font-size: 18px;
+    position: relative;
+}
+
+.primary-icon{
+    margin-top: 10px ;
+    height: 60px;
+}
+
+.topbar--link {
+    word-spacing: 25px;
+    list-style-type: none;
+}
+.topbar--link .topbar--infos .list-item {
+    display: inline-block;
+    padding: 40px 20px;
+}
+.topbar--link .topbar--infos .list-item .active {
+    color: #fd7e08;
+}
+
+.topbar a {
+    text-decoration: none ;
+    color: black;
+    display: block;
+}
+.topbar a:hover {
+    color: #fd7e08 ;
+}
+.topbar--button{
+    display: inline-block;
+}
+.topbar--button .list-button{
+    position: relative;
+    display: inline-block;
+    border: 2px #fd7e08 solid;
+    justify-content: center;
+    border-radius: 5px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 18px;
+    word-spacing: 6px;
+    justify-content: space-between;
+}
+.topbar--button .list-button .btn1{
+    color: #fd7e08;
+    line-height: 45px;
+    padding-left: 15px;
+    padding-right: 15px;
+    
+}
+.topbar--button .list-button .btn2{
+    background: #fd7e08;
+    color: black;
+    line-height: 45px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.menu {
+    display: none;
+}
+.menu-line {
+    width: 20px;
+    height: 3px;
+    background-color: black;
+    margin-bottom: 4px;
+}
+
+
+/* -- presentation -- */
+.presentation {
+    position: relative;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 70px;
+    padding-right: 30px; 
+    font-size: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.presentation h1{
+    font-size: 35px;
+    padding-bottom: 20px;
+    line-height: 50px;
+}
+.presentation p{
+    padding-top: 10px;
+    padding-bottom: 30px;
+    font-size: 16px;
+}
+.presentation a {
+    text-decoration: none;
+}
+.presentation ul{
+    padding-bottom: 30px;
+}
+.presentation .list-button{
+    list-style: none;
+    display: inline-block;
+    position: relative;
+    border: 2px #fd7e08 solid;
+    border-radius: 8px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+    word-spacing: 6px;
+}
+.presentation .list-button .btn2 {
+    background: #fd7e08;
+    position: relative;
+    color: black;
+    line-height: 45px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 11px;
+    padding-bottom: 11px;
+}
+.presentation .list-button .btn1 {
+    display: block;
+    color: #fd7e08;
+    line-height: 45px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.presentation img{
+    position: absolute;
+    left: 600px;
+    top: 20px;
+    width: 550px;
+    height: 430px;
+    padding-bottom: 30px;
+}
+
+/* -- description -- */
+.description {
+    position: relative;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 70px;
+    padding-right: 100px; 
+    font-size: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.description h1{
+    font-size: 35px;
+    padding-bottom: 20px;
+    line-height: 50px;
+}
+.description p{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 18px;
+}
+.description a {
+    text-decoration: none;
+}
+.description ul{
+    padding-bottom: 30px;
+}
+.description .list-button{
+    list-style: none;
+    display: inline-block;
+    position: relative;
+    border: 2px #fd7e08 solid;
+    border-radius: 8px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+    word-spacing: 6px;
+}
+.description .list-button .btn2 {
+    background: #fd7e08;
+    position: relative;
+    color: black;
+    line-height: 45px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 11px;
+    padding-bottom: 11px;
+}
+
+/* -- explication -- */
+.explication {
+    position: relative;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 70px;
+    padding-right: 30px; 
+    font-size: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.explication h1{
+    font-size: 35px;
+    padding-bottom: 5px;
+    line-height: 50px;
+}
+.explication a {
+    text-decoration: none;
+}
+.explication ul{
+    padding-bottom: 30px;
+    line-height: 30px;
+    font-size: 18px;
+}
+.explication .list-button{
+    list-style: none;
+    display: inline-block;
+    position: relative;
+    border: 2px #fd7e08 solid;
+    border-radius: 8px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+    word-spacing: 6px;
+}
+.explication .list-button .btn2 {
+    background: #fd7e08;
+    position: relative;
+    color: black;
+    line-height: 45px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 11px;
+    padding-bottom: 11px;
+}
+.explication img{
+    position: absolute;
+    left: 650px;
+    top: 20px;
+    width: 550px;
+    height: 430px;
+    padding-bottom: 30px;
+}
+
+/* -- doute -- */
+.doute {
+    position: relative;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 70px;
+    padding-right: 100px; 
+    font-size: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.doute h1{
+    font-size: 35px;
+    padding-bottom: 20px;
+    line-height: 50px;
+}
+.doute p{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 18px;
+}
+.doute a {
+    text-decoration: none;
+}
+.doute ul{
+    padding-bottom: 30px;
+    font-size: 19px;
+}
+.doute .list-button{
+    list-style: none;
+    display: inline-block;
+    position: relative;
+    border: 2px #fd7e08 solid;
+    border-radius: 8px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+    word-spacing: 6px;
+}
+.doute .list-button .btn2 {
+    background: #fd7e08;
+    position: relative;
+    color: black;
+    line-height: 45px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 11px;
+    padding-bottom: 11px;
+}
+
+/* -- plus -- */
+.plus {
+    position: relative;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 70px;
+    padding-right: 30px; 
+    font-size: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.plus h1{
+    font-size: 35px;
+    padding-bottom: 20px;
+    line-height: 50px;
+}
+.plus p{
+    padding-top: 10px;
+    padding-bottom: 30px;
+    font-size: 18px;
+}
+.plus a {
+    text-decoration: none;
+}
+.plus ul{
+    padding-bottom: 30px;
+    font-size: 16px;
+}
+.plus li{
+    list-style: none;
+    padding: 10px 90px;
+    background-image: url(image/img0.jpg);
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 70px;
+}
+.plus .list-button{
+    list-style: none;
+    display: inline-block;
+    position: relative;
+    border: 2px #fd7e08 solid;
+    border-radius: 8px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+    word-spacing: 6px;
+}
+.plus .list-button .btn2 {
+    background: #fd7e08;
+    position: relative;
+    color: black;
+    line-height: 45px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 11px;
+    padding-bottom: 11px;
+}
+.plus img{
+    position: absolute;
+    left: 650px;
+    top: 20px;
+    width: 550px;
+    height: 430px;
+    padding-bottom: 30px;
+}
+
+/* -- footer -- */
+.foot {
+    background-color: #fd7e08;
+    color: black;
+    font-size: 16px;
+}
+.foot * {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+}
+.foot .row {
+    padding: 1em 1em;
+}
+.foot .row.primary {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 2fr;
+    align-items: stretch;
+}
+.foot .column {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0 2em;
+    min-height: 15em;
+}
+.foot h3 {
+    width: 100%;
+    text-align: left;
+    color: white;
+    font-size: 1.4em;
+    white-space: nowrap;
+  }
+.foot ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+}
+.foot li:not(:first-child) {
+    margin-top: 0.8em;
+}
+.foot ul li a {
+    color: #a7a7a7;
+    text-decoration: none;
+}
+.foot ul li a:hover {
+    color: #2a8ded;
+}
+.foot div.social {
+    display: flex;
+    justify-content: space-around;
+    font-size: 2.4em;
+    flex-direction: row;
+    margin-top: 0.5em;
+}
+.foot .social i {
+    color: #bac6d9;
+    padding-right: 0px;
+}
+  
+
+
+/* -- responsive -- */
+
+@keyframes fun {
+    0% {
+        transform: scale(1) rotate(0deg);
+    }
+    100% {
+        transform: scale(1.1) rotate(10deg);
+    }
+}
+@media screen and (max-width: 850px) {
+    .row.primary {
+      grid-template-columns: 1fr;
+    }
+  
+}
+
+@media all and (max-width: 480px) {
+    .topbar {
+        position: absolute;
+        flex-direction: column;
+    }
+    .topbar .topbar--logo {
+        width: 100px;
+    }
+    .menu {
+        display: block;
+        position: absolute;
+        right: 15px;
+        top: 15px; 
+    }
+    .topbar .topbar--infos, .topbar--button{
+        float: none;
+        text-align: center;
+        justify-content: center;
+        margin: 0 5px 1px 5px;
+        line-height: 0px;
+    }
+    .topbar a {
+        display: block;
+        margin-right: -4px;
+        white-space: nowrap;
+    }
+    .topbar--button {
+        font-size: 15px;
+        word-spacing: 2px;
+        line-height: 10px;
+        padding-left: 2px;
+        padding-right: 2px;
+    }
+    .presentation {
+        padding-left: 0;
+    }
+    .presentation img {
+        position: static;
+        margin-bottom: 1rem;
+        width: 100%;
+        display: block;
+    }
+    .explication {
+        padding-left: 0;
+    }
+    .explication img {
+        position: static;
+        margin-bottom: 1rem;
+        width: 100%;
+        display: block;
+    }
+    .description {
+        padding-left: 0;
+    }
+    .description img {
+        position: static;
+        margin-bottom: 1rem;
+        width: 100%;
+        display: block;
+    }
+    .doute {
+        padding-left: 0;
+    }
+    .doute img {
+        position: static;
+        margin-bottom: 1rem;
+        width: 100%;
+        display: block;
+    }
+    .plus {
+        padding-left: 0;
+    }
+    .plus img {
+        position: static;
+        margin-bottom: 1rem;
+        width: 100%;
+        display: block;
+    }
+}
+/*
+.topbar ul {
+    display: flex;
+}
+.topbar li , 
+.topbar a {
+    list-style: none;
+    display: flex;
+    line-height: 40px;
+    align-items: center;
+}
+*/
+
+    /*
+    .body {
+        display: block;
+    }
+    
+    .topbar .topbar--link .topbar--infos {
+        list-style-type: none;
+        width: 100%;
+        text-align: center;
+        padding-top: 10px;
+        display: none ;
+    }
+    .topbar .topbar--button {
+        list-style-type: none;
+        width: 100%;
+        text-align: center;
+        padding-top: 10px;
+        display: none;
+    }
+    
+    .activ {
+        display: block;
+    }
+    */
